@@ -1,9 +1,11 @@
-# Reinforcement-Learning-DQN-for-ATARI-s-Pong-Game---TensorFlow-2.0-Keras
+## Reinforcement-Learning-DQN-for-ATARI-s-Pong-Game---TensorFlow-2.0-Keras
 ### Build DQN Model: Three approaches
 1). Basic DQN with three dense layers: 
     First two dense layers with 64 neurons and output layer with 6. Input is original shape (210, 160, 3). 
+
 2). Basic DQN with Data Preprocessing: 
     Some irrelevant pixels were cropped out from the original image. The color of the image is not important for the decision of         actions, thus the screen was further decolored to single channel. The image was finally resized to (84, 84, 1). Then run the         same model as approach 1.
+
 3). CNN DQN Model:
     Three Convolutional Neural Network layers are added to the DQN model. Train the model with preprocessed input data. 
 
