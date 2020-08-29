@@ -1,5 +1,5 @@
-## Reinforcement-Learning-DQN-for-ATARI-s-Pong-Game---TensorFlow-2.0-Keras
-# Build DQN Model: Three approaches
+# Reinforcement-Learning-DQN-for-ATARI-s-Pong-Game---TensorFlow-2.0-Keras
+### Build DQN Model: Three approaches
 1). Basic DQN with three dense layers: 
     First two dense layers with 64 neurons and output layer with 6. Input is original shape (210, 160, 3). 
 2). Basic DQN with Data Preprocessing: 
@@ -7,7 +7,7 @@
 3). CNN DQN Model:
     Three Convolutional Neural Network layers are added to the DQN model. Train the model with preprocessed input data. 
 
-# DQN Model layers:
+### DQN Model layers:
 Neurons of first two dense layer: 64, output layer: 6;
 First CNN layer: neurons 16, kernel size = 8;
 Second CNN layer: neurons 32, kernel size = 4;
@@ -18,6 +18,7 @@ The table shows total parameters reduced a lot by data preprocessing, and furthe
 Model:	            Basic DQN	          Basic DQN + Data Prep. 	   CNN DQN
 Total Parameters:  	6,455,814	          456,198	                   123,478
 
+### Colab Notebook
 The Notebook code is modified from Aurélien Geron’s GitHub: https://github.com/ageron/handson-ml2 :
 18_reinforcement_learning.ipynb: Deep Q-Network part.
 
