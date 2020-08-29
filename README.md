@@ -20,17 +20,18 @@ The total parameters for Basic DQN is 6,455,814; reduced 14 times by DQN + data 
 
 ### Colab Notebook
 The Notebook code is modified from Aurélien Geron’s GitHub: https://github.com/ageron/handson-ml2 :
-18_reinforcement_learning.ipynb: Deep Q-Network part.
+18_reinforcement_learning.ipynb: Deep Q-Network part. Original env:  env = gym.make("CartPole-v1")
 
 Major changes:
-Original env:  env = gym.make("CartPole-v1")
-Change to be:  env = gym.make('PongNoFrameskip-v4’)
+
+env Change to be:  env = gym.make('PongNoFrameskip-v4’)
 
 Original input and output:
-input_shape = [4] # == env.observation_space.shape
-n_outputs = 2 # == env.action_space.n
+input_shape = [4];
+n_outputs = 2 
+
 Change to be:
-input_shape = [210, 160, 3] 
+input_shape = [210, 160, 3]; 
 n_outputs = 6 ( 6 actions: 'NOOP', 'FIRE', 'RIGHT', 'LEFT', 'RIGHTFIRE', 'LEFTFIRE’)
 
 To make input into neural network, add a Flatten layer before the dense layers:
