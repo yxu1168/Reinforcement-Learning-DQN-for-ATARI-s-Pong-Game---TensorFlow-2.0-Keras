@@ -16,9 +16,7 @@ Second CNN layer: neurons 32, kernel size = 4;
 Third CNN layer: neurons 32, kernel size = 3;
 Activation: relu.
 
-The table shows total parameters reduced a lot by data preprocessing, and further reduced by CNN.
-Model:	            Basic DQN	          Basic DQN + Data Prep. 	   CNN DQN
-Total Parameters:  	6,455,814	          456,198	                   123,478
+The total parameters for Basic DQN is 6,455,814; reduced 14 times by DQN + data preprocessing: 456,198; and further reduced by CNN DQN: 123,478.
 
 ### Colab Notebook
 The Notebook code is modified from Aurélien Geron’s GitHub: https://github.com/ageron/handson-ml2 :
