@@ -1,5 +1,5 @@
-## Reinforcement-Learning-DQN-for-ATARI-s-Pong-Game---TensorFlow-2.0-Keras
-### Implemented CNN DQN, Double DQN and Dueling Double DQN Models to Atari's Pong Game
+## Implemented CNN DQN, Double DQN and Dueling Double DQN Models to Atari's Pong Game---TensorFlow-2.0-Keras
+### Built CNN DQN, Double DQN and Dueling Double DQN Models for Pong Game
 
 1). Data Preprocessing: 
     Pong game original input shape is (210, 160, 3); Some irrelevant pixels were cropped out from the original image; The color of the image is not important for the decision of actions, thus the screen was further decolored to single channel. The image was finally resized to (84, 84, 1). 
